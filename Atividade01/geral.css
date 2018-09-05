@@ -1,0 +1,75 @@
+/* Fonte: https://tableless.com.br/criando-um-menu-horizontal-com-css/ */
+
+body {
+  margin: 0;
+  font-family: tahoma;
+  color: #141212;
+  background-color: #c6c6c6;
+
+}
+
+/* define algumas propriedades do menu */
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+}
+
+
+/* Deixa o menu horizontal */
+#menu ul li { display: inline; }
+
+
+/* define o visual dos links */
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+}
+
+/* O que acontece com o link quando o usuários passa o mouse */
+#menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+}
+
+table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+
+}
+
+td{
+    color: #2B2F8C;
+    text-decoration:inherit;
+}
+
+table {
+  width: 100%;
+  background-color:#D8A8f5;
+}
+
+h1{
+  color: red;
+  font-family: arial;
+
+}
+
+
+p.maior{
+    color: #c6c6c6;
+    text-align: center;
+}
+
+label{
+  color: #A4F3D9;
+  font-family:fantasy;
+
+
+
+}

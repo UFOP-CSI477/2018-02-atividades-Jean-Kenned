@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="geral.css">
+  </head>
+  <body>
+    <h1>Atividade 1</h1>
+    <h2>Página de Cadastro</h2>
+    <h2>Dados do Cadastro</h2>
+    <form method="post" action="validar.html">         <!--method- post-->
+      <label for="nome">Nome</label>
+      <input type="text" name = "nome" autocomplete="none"  placeholder="Nome da pessoa"><br>
+
+      <label for="endereco">Endereco</label>
+      <input type="text" name = "endereco"><br>
+
+      <label for="telefone">Telefone</label>
+      <input type="text" name = "telefone" maxlength="11"
+       placeholder="utilize o formato (99)111111111"><br>
+
+      <label for="genero">Gênero</label>
+
+      <input type="radio" id="feminino" name="genero"
+      value="F">
+    </label for="feminino">Feminino</label>
+
+      <input type="radio" id="masculino" name="genero"
+      value="M">
+    </label for="masculino">Masculino</label>
+
+      <input type="radio" id="naobinario" name="genero"
+      value="N">
+    </label for="masculino">Não binário</label>
+
+      <br>
+
+      <!--checkbox-->
+      <label for="area">Área de interesse</label>
+
+      <input type="checkbox" id="web" name="area[0]">
+      </label for="web">Desenvolvimento Web</label>
+
+      <input type="checkbox" id="bd" name="area[1]">
+      </label for="bd">Banco de Dados</label>
+
+      <input type="checkbox" id="otim" name="area[2]">
+    </label for="otim">Otimização</label>
+
+      <br>
+
+      <!--select-->
+      <label for="cidade">Cidade</label>
+      <select name="cidade">
+        <option value="0">Selecione:</option>
+        <option value="1">João Monlevade</option>
+        <option value="2">Itabira</option>
+        <option value="3" selected>Alvinópolis</option>
+        <option value="4">Belo Horizonte</option>
+        <option value="5">Itaúna</option>
+
+      </select>
+
+      <br>
+
+      <label for="usuario">Usuário</label>
+      <input type="text" name="usuario">
+
+
+      <label for="senha">Senha</label>
+      <input type="password" name="senha">
+
+      <br>
+
+      <input type="submit" value="Cadastrar">
+      <input type="reset" value="Limpar">
+
+
+    </form>
+
+  </body>
+</html>
