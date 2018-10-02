@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Página de tabela</title>
+      <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+
+  </head>
+  <body>
+
+    <div class="jumbotron">
+    <h1>Atividade 2</h1>
+    <h2>Tabela</h2>
+  </div>
+
+
+    <div class="container-fluid">
+    <h3>Lista de alunos(as) matriculados na turma</h3>
+
+    <p class="maior">Aula no laboratório H102</p>
+    <p>Horário da aula: 18:50-20:30 horas</p>
+
+    <div class="table-responsive">
+      <!--   table-dark table-sm pode ser adicionados-->
+        <table class="table table-bordered table-striped table-hover">
+
+        <caption>Turma de Web</caption>
+        <!--linhas sao "tr"-->
+        <!--cabecalho-->
+        <thead class="thead-dark">
+            <tr>
+                <!--cabecalho é th"-->
+                <th>Matrícula</th><!--aqui nao funciona pq a classe maior
+                foi especificada pra tag "p" apenas-->
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Curso</th>
+                <th>Turma</th>   <!--class indica a classe de estilo que eu quero utilizar, classe
+                fundo criada lá em cima-->
+            </tr>
+
+          </thead>
+
+          <tbody>
+            <!--dados-->
+            <!--linha 1-->
+            <tr>
+              <td>1</td>
+              <td>Jean</td>
+              <td>jeanjk99@hotmail.com</td>
+              <td>Eng. Computação</td>
+              <td rowspan="4">11</td>
+
+            </tr>
+
+            <!--linha 2-->
+            <tr>
+              <td>2</td>
+              <td>zeliao</td>
+              <td>zelio@hotmail.com</td>
+              <td>Eng. Computação</td>
+
+            </tr>
+
+            <!--linha 3-->
+            <tr>
+              <td>3</td>
+              <td>Olimpio</td>
+              <td>olimpio@hotmail.com</td>
+              <td>Eng. Computação</td>
+
+            </tr>
+
+            <!--linha 4-->
+            <tr>
+              <td>4</td>
+              <td>Arthur</td>
+              <td>arthur@hotmail.com</td>
+              <td>Eng. Computação</td>
+
+            </tr>
+
+
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <!--colspam mescla duas células,no caso duas colunas-->
+              <td colspan="2">Total de pessoas:</td>
+              <td colspan="3">2</td>
+
+            </tr>
+
+          </tfoot>
+
+        </table>
+
+    </div>
+  </div>
+  </body>
+</html>
