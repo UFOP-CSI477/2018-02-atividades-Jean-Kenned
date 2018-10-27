@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Corrida de Rolimã</title>
+   <script src="jquery-3.3.1.js"></script>
+   <script src="corrida.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+  <!--cabecalho-->
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Competição de carrinhos de rolimã</h1>
+      <p>Apuração dos resultados em provas de carrinhos de rolimã</p>
+    </div>
+  </div>
+
+  <!--formulario-->
+  <div class="container">
+
+    <form class="" name="dados">
+      <!--cabeçalho-->
+      <div class="row">
+        <label class="col-sm-4">Ordem de Largada</label>
+        <label class="col-sm-4">Competidores(as)</label>
+        <label class="col-sm-4">Tempos(s)</label>
+      </div>
+
+      <!--competidor 1-->
+      <div class="form-group">
+        <div class="row">
+          <label class="col-sm">1</label>
+          <input type="text" id="competidor1" class="form-control col-sm">
+          <div class="col-md-4 col-md-offset-4">
+            <input type="text" id="tempo1"  class="form-control col-sm">
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-danger" style="display: none" id="alertaV1">
+        <spam>Informe o nome e o tempo corretamente!</spam>
+    </div>
+
+
+      <div class="form-group">
+        <!--competidor 1-->
+        <div class="row">
+          <label class="col-sm">2</label>
+          <input type="text" id="competidor2" class="form-control col-sm">
+          <div class="col-md-4 col-md-offset-4">
+            <input type="text" id="tempo2" class="form-control col-sm">
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-danger" style="display: none" id="alertaV2">
+        <spam>Informe o nome e o tempo corretamente!</spam>
+    </div>
+
+      <div class="form-group">
+        <!--competidor 1-->
+        <div class="row">
+          <label class="col-sm">3</label>
+          <input type="text" id="competidor3" class="form-control col-sm">
+          <div class="col-md-4 col-md-offset-4">
+            <input type="text" id="tempo3" class="form-control col-sm">
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-danger" style="display: none" id="alertaV3">
+        <spam>Informe o nome e o tempo corretamente!</spam>
+    </div>
+
+      <div class="form-group">
+        <!--competidor 1-->
+        <div class="row">
+          <label class="col-sm">4</label>
+          <input type="text" id="competidor4" class="form-control col-sm">
+          <div class="col-md-4 col-md-offset-4">
+            <input type="text" id="tempo4" class="form-control col-sm">
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-danger" style="display: none" id="alertaV4">
+        <spam>Informe o nome e o tempo corretamente!</spam>
+    </div>
+
+      <div class="form-group">
+        <!--competidor 1-->
+        <div class="row">
+          <label class="col-sm">5</label>
+          <input type="text" id="competidor5" class="form-control col-sm">
+          <div class="col-md-4 col-md-offset-4">
+            <input type="text" id="tempo5" class="form-control col-sm">
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-danger" style="display: none" id="alertaV5">
+        <spam>Informe o nome e o tempo corretamente!</spam>
+    </div>
+
+      <div class="form-group">
+        <!--competidor 1-->
+        <div class="row">
+          <label class="col-sm">6</label>
+          <input type="text" id="competidor6" class="form-control col-sm">
+          <div class="col-md-4 col-md-offset-4">
+            <input type="text" id="tempo6" class="form-control col-sm">
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-danger" style="display: none" id="alertaV6">
+        <spam>Informe o nome e o tempo corretamente!</spam>
+    </div>
+    </form>
+
+
+    <button type="button" name="apurar" id="btnApurar" class="btn btn-primary">Apurar</button>
+
+  </div>
+
+ <br>
+ <br>
+
+  <table class="table invisible" id="tabela" >
+    <thead>
+      <tr>
+        <th scope="col">Posição</th>
+        <th scope="col">Largada</th>
+        <th scope="col">Competidor(a)</th>
+        <th scope="col">Tempo(s)</th>
+        <th scope="col">Resultado</th>
+      </tr>
+    </thead>
+    <tbody id="bodyTabela">
+    </tbody>
+  </table>
+
+
+
+</body>
+</html>
